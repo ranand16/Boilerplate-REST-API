@@ -1,0 +1,33 @@
+{
+  "name": "boilerplate-rest-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranand16/Boilerplate-REST-API.git"
+  },
+  "keywords": [
+    "rest",
+    "api",
+    "nodejs",
+    "node",
+    "swagger",
+    "mongo",
+    "mongodb",
+    "mongoose",
+    "expressjs",
+    "express",
+    "zod",
+    "typescript"
+  ],
+  "author": "Rishabh Anand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ranand16/Boilerplate-REST-API/issues"
+  },
+  "homepage": "https://github.com/ranand16/Boilerplate-REST-API#readme"
+}
