@@ -1,5 +1,44 @@
 export default {
-    port: 8000,
-    dbUri: "mongodb+srv://rishabh:Rishabh1!@cluster0.7otrqr6.mongodb.net/?retryWrites=true&w=majority",
-    saltWorkFactor: 10,
-}
+  port: 8000,
+  dbUri:
+    "mongodb+srv://rishabh:Rishabh1!@cluster0.7otrqr6.mongodb.net/?retryWrites=true&w=majority",
+  saltWorkFactor: 10,
+  private: `-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAw9EwylNDZlCUX16c80QEBsVYQnDOZDdqs69voPd4+OKasGA/
+ZZKAl3VA9tWQZmgP6Yh3ck1+K4God9pBE+k00pUpHtC2LV8MldSRDN7pu4Z90mPn
+JddWs7NqqVuVzP/k2GJTIbre+ZMXXJ6KXXgr/8fnNgUg+AZGDmZVaBRI+wI9xIxW
+R16dHJHb+wAqYT+9ecansxL7htAcl68S8MLvvuMoVchaB8NYKSKTRZ9+1l31/CwE
+H2WY5zcH/8vlqzlAsEzdCebVGCoNSJEUdzz53RYRUvV6Tvl+SEIOiK4f/i89eVXJ
+RKq0+kLABGfTPri9vznF9otPK1yiEb9e65RViQIDAQABAoIBAHMdREB86E96qW7T
+URMVdgSA+Ry98icqCNkvFkGbmgs+M8/iFQLiOCRRsuoorGX3YPtZ1VZlxflPlLk4
+ni9VVk9BjtXlvmM30E84kjjtxpwOOWN4hYdSa07i954uEAdem6q1Sse2cqRnW0GA
+ljjSj5MjcoHoS/Riw8ZtVGIGIs0j/+i11jxN5RbAUX7dpT3HtFQHPMIXJDfsEFia
+yvszQ1Hd2uF2Fv+5w1aiAxP56pcFy2mizmy2ONqQV/+L9hTgM6Rx2UCq5tDf3UwA
+7CukGpxsSocObNskDSCDJ6HlAqLhZg7mWcIKKHpTmME3NA7EumYzAJjHla1x0jyr
+rjUHq/0CgYEA/VFr69OCrK6RI+dH8cFtoXNFXvRlG7ayzV60yC+OOPyA4IWAzpj/
+xa4TpaYDlfP/OagLxALe81Z9bx8nHmEkaZGazJAUpe2KiqclR+cQpGHxTR0QVwMa
+zHTjC+P3anvBp/KFIyYrKnKBKy1MAxjSG92iF8Zr8RMeodA6lKOfF1MCgYEAxePs
+BCL+DOeQkX12WFLDOzXxwOzY4GyAhrU7hOA4wc7+jwXLxxA33f0DSeRILRsPXKfO
+yT9tHTRUSdpZ9jO09Dgnnhqgz5xV9zgboTWfyKL8X6ra8FkG6cUtG5SizEnIJtFE
+HbAQYqOVaeIy6+cyRj6peewbNHcr7EPzgu6skDMCgYEAxr6M55conQbRBNQ+U+So
+eNURhjBE63tpyUsWl0EIWplxG7ZimrTbZ2LuMzaO9aVbhwbbREvkVBJ1kytj66fX
+g6QjSX95U72Mxr/gtgsJuY7GXPQCj+H1spe6Uufmg/rYs0XJQwx9LW5s/U0qp/tf
+TVGUDQc2RQv1KotOirPc69UCgYAMDEJURiUdeAOvN+o6ml9UfYZIbqMNls2EZghH
+oLcT5ZxN7NZpOi2MkFjg6MsUI++dfoHycrAb9RGkpWyQtrkvnTOcRpa/zQ7WzE2y
+VOdzeajP0kEeHO100hJa+YOn2F4dLuRswkldGASCu8jJ3/uJl0sOJzfIy/Cao9Bx
+ikJrTQKBgDtBYMwVFWJVg0dEmfR/oVv28P8n+Tdrhp1DicEcmzr9NPOue/d5/WNk
+nVojytDfYjgYsWmhy5xp2gwnG+omx94Cabr9PsjqEp7QIWtSeI5/K9atFabHxK7M
+hODwFc3MEVdO7woGqr84mjYHSPlLfAOyw87sdqiMqpYwlqasjGEO
+-----END RSA PRIVATE KEY-----`,
+  public: `-----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAw9EwylNDZlCUX16c80QE
+BsVYQnDOZDdqs69voPd4+OKasGA/ZZKAl3VA9tWQZmgP6Yh3ck1+K4God9pBE+k0
+0pUpHtC2LV8MldSRDN7pu4Z90mPnJddWs7NqqVuVzP/k2GJTIbre+ZMXXJ6KXXgr
+/8fnNgUg+AZGDmZVaBRI+wI9xIxWR16dHJHb+wAqYT+9ecansxL7htAcl68S8MLv
+vuMoVchaB8NYKSKTRZ9+1l31/CwEH2WY5zcH/8vlqzlAsEzdCebVGCoNSJEUdzz5
+3RYRUvV6Tvl+SEIOiK4f/i89eVXJRKq0+kLABGfTPri9vznF9otPK1yiEb9e65RV
+iQIDAQAB
+-----END PUBLIC KEY-----`,
+  accessTokenTTL: "15m",
+  refreshTokenTTL: "1y",
+};

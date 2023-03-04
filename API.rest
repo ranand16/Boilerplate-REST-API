@@ -1,16 +1,51 @@
-## Healthcheck
+@authToken=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDAyMDA5NTI5OGE2ZDE5NWIwYTExNzciLCJlbWFpbCI6ImltcmFuYW5kMTZAZ21haWwuY29tIiwibmFtZSI6IlJpc2hhYmggQW5hbmQiLCJjcmVhdGVkQXQiOiIyMDIzLTAzLTAzVDE0OjEzOjQxLjgwN1oiLCJ1cGRhdGVkQXQiOiIyMDIzLTAzLTAzVDE0OjEzOjQxLjgwN1oiLCJfX3YiOjAsInNlc3Npb24iOiI2NDAzNWJjODUyN2U5OTdmNmVlZWMxZGQiLCJpYXQiOjE2Nzc5NDE3MDQsImV4cCI6MTY3Nzk0MjYwNH0.DSvBGj0DgJdv2i1w8elsLpMjpFKabMDHpMjsimx7LTmRIwE3DYDO6IIKi3us9s71kXIGyvDdjAK162MTUSdFnP6AaWDonntvYC1SHTeXDniLnm6-QuG81vzPHN192kny-y8u4aPubLcEcuQhYe2op6N4s0MQjW3nCHX-KOhjn_v_0HeKME9NeSsGYMxb8SJHKy5ZsBWy9HoYRdy3-Pro-Aaa9VXrFcZ8pT4wcAOmmyrew3Akje-MqNBGSZcB5AHUuO8QXg33iTW9el7T4pcT_m1gRV_d5p-x43dbaUA6Vo9UyNNySH23_zdgZ5NNYOEhLWlAnPWeZ3lEEEx5IbllKQ
+@refreshToken=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDAyMDA5NTI5OGE2ZDE5NWIwYTExNzciLCJlbWFpbCI6ImltcmFuYW5kMTZAZ21haWwuY29tIiwibmFtZSI6IlJpc2hhYmggQW5hbmQiLCJjcmVhdGVkQXQiOiIyMDIzLTAzLTAzVDE0OjEzOjQxLjgwN1oiLCJ1cGRhdGVkQXQiOiIyMDIzLTAzLTAzVDE0OjEzOjQxLjgwN1oiLCJfX3YiOjAsInNlc3Npb24iOiI2NDAzNWJjODUyN2U5OTdmNmVlZWMxZGQiLCJpYXQiOjE2Nzc5NDE3MDQsImV4cCI6MTcwOTQ5OTMwNH0.FfnAE3ANrkpDwTsdUEE6xtcqR8rvSmZ6zDe9CNDzyK8PKUoripTTn6k3twCIAa-o5tzyNy-GKW3hAOX4kbqriHFsll6WuGBPeVMEn4PqbluNNGApk7o71SSV2L9M_rCXnATin25LgfBCKqdyGQSynDAwerSa2iupsNOjQdjqXoWMg9Ti2UkQTfB_MEVfwquh2R081SzeGm5F3CXlm8FpbLYBOWCeEIdfTk6TdIKTO33_dhjtJ_H67DgOGDzgMJwjjiBzurAp5PdbndxmOvZOdPTCaXm190ES6egVlO6b6w1Deb3x44EpyzbohSilGQBs74OczOARMyEIwI2SYF1J4g
+
+#### Healthcheck
 GET http://localhost:8000/healthcheck
 
-###
-
-## user creation
+#### user creation or signup
 POST http://localhost:8000/api/users HTTP/1.1
 User-Agent: rest-client
 Content-Type: application/json
 
 {
     "name": "Rishabh Anand",
-    "email": "ranand16@gmail.com",
+    "email": "imranand16@gmail.com",
     "password": "qwerty1234",
     "passwordConfirmation": "qwerty1234"
+}
+
+#### user session creation or sign in
+POST http://localhost:8000/api/sessions HTTP/1.1
+User-Agent: rest-client
+Content-Type: application/json
+
+{
+    "email": "imranand16@gmail.com",
+    "password": "qwerty1234"
+}
+
+#### get user sessions 
+GET http://localhost:8000/api/sessions HTTP/1.1
+User-Agent: rest-client
+Content-Type: application/x-www-form-urlencoded
+x-refresh: {{refreshToken}}
+Authorization: {{authToken}}
+
+{
+    "email": "imranand16@gmail.com",
+    "password": "qwerty1234"
+}
+
+#### get user sessions 
+DELETE http://localhost:8000/api/sessions HTTP/1.1
+User-Agent: rest-client
+Content-Type: application/x-www-form-urlencoded
+x-refresh: {{refreshToken}}
+Authorization: {{authToken}}
+
+{
+    "email": "imranand16@gmail.com",
+    "password": "qwerty1234"
 }
